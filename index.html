@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La Bellezza — Centro Estetico a Caggiano (SA)</title>
+<meta name="description" content="Centro estetico a Forloso, Caggiano (SA). Pulizia viso, massaggi, manicure e pedicure, epilazione, trucco sposa. Prenota per telefono o WhatsApp: 328 490 3931.">
+<meta property="og:title" content="La Bellezza — Centro Estetico a Caggiano (SA)">
+<meta property="og:description" content="Un salone di quartiere a Forloso, Caggiano: trattamenti viso e corpo, manicure, epilazione, trucco sposa. 5,0★ su Google.">
+<meta property="og:type" content="business.business">
+<meta property="og:locale" content="it_IT">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8C%B8%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Work+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BeautySalon",
+  "name": "La Bellezza",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Forloso",
+    "addressLocality": "Caggiano",
+    "addressRegion": "SA",
+    "postalCode": "84030",
+    "addressCountry": "IT"
+  },
+  "telephone": "+39 328 490 3931",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "10"
+  },
+  "sameAs": ["https://www.facebook.com/labellezzacentroestetico/"]
+}
+</script>
+<style>
+  :root {
+    --ink: #241B22;
+    --ink-soft: #6E5C5D;
+    --notte: #241B22;
+    --notte-soft: #3A2C2E;
+    --paper: #FBF7F0;
+    --cream: #F1E7D8;
+    --melograno: #B23A2E;
+    --melograno-deep: #8C2C22;
+    --oliva: #6E7550;
+    --oliva-deep: #4F5539;
+    --oro: #C99A4E;
+    --line: rgba(36, 27, 34, 0.14);
+    --line-on-dark: rgba(251, 247, 240, 0.16);
+    --font-display: 'Instrument Serif', serif;
+    --font-body: 'Work Sans', sans-serif;
+  }
+  :root:not([data-theme="light"]) {
+    @media (prefers-color-scheme: dark) {
+      --paper: #221A1C; --cream: #2A2022; --ink: #F3E9DD; --ink-soft: #CBB7AC;
+      --line: rgba(243, 233, 221, 0.16);
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #221A1C; --cream: #2A2022; --ink: #F3E9DD; --ink-soft: #CBB7AC;
+    --line: rgba(243, 233, 221, 0.16);
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--cream); color: var(--ink); font-family: var(--font-body); font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+  img, svg { max-width: 100%; display: block; }
+  a { color: inherit; }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 0 32px; }
+  @media (max-width: 640px) { .wrap { padding: 0 20px; } }
+  .skip-link { position: absolute; left: -999px; top: 0; background: var(--melograno); color: #fff; padding: 12px 18px; border-radius: 0 0 10px 0; z-index: 200; text-decoration: none; font-weight: 700; }
+  .skip-link:focus { left: 0; }
+  :focus-visible { outline: 2px solid var(--melograno); outline-offset: 3px; }
+  @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; scroll-behavior: auto !important; } }
+
+  /* ---------- photo frame + grain, reused motif ---------- */
+  .photo-frame { position: relative; overflow: hidden; }
+  .photo-frame img { width: 100%; height: 100%; object-fit: cover; position: absolute; inset: 0; }
+  .photo-frame::after { content: ""; position: absolute; inset: 0; background: linear-gradient(160deg, var(--melograno) 0%, transparent 65%); mix-blend-mode: multiply; opacity: 0.32; pointer-events: none; }
+  .grain { position: absolute; inset: 0; opacity: 0.35; mix-blend-mode: overlay; pointer-events: none; }
+
+  /* ---------- Nav ---------- */
+  header { position: sticky; top: 0; z-index: 80; background: color-mix(in srgb, var(--cream) 88%, transparent); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+  nav.wrap { display: flex; align-items: center; justify-content: space-between; height: 78px; position: relative; }
+  .brand { font-family: var(--font-display); font-style: italic; font-weight: 400; font-size: 1.6rem; text-decoration: none; color: var(--ink); }
+  .brand b { font-style: normal; font-family: var(--font-body); font-weight: 800; font-size: 0.95rem; letter-spacing: 0.02em; vertical-align: 2px; margin-left: 4px; color: var(--melograno); }
+  .nav-links { display: flex; gap: 30px; list-style: none; margin: 0; padding: 0; }
+  .nav-links a { text-decoration: none; font-size: 0.95rem; font-weight: 600; color: var(--ink-soft); transition: color .2s; }
+  .nav-links a:hover { color: var(--melograno); }
+  .nav-cta { background: var(--melograno); color: #fff !important; padding: 11px 22px; border-radius: 3px; font-size: 0.9rem; font-weight: 700; text-decoration: none; white-space: nowrap; }
+  .nav-right { display: flex; align-items: center; gap: 26px; }
+  .menu-toggle { display: none; background: none; border: 0; cursor: pointer; padding: 6px; }
+  .menu-toggle svg { width: 24px; height: 24px; stroke: var(--ink); }
+  .mobile-panel { display: none; position: absolute; left: 0; right: 0; top: 78px; background: var(--paper); border-bottom: 1px solid var(--line); padding: 8px 20px 20px; flex-direction: column; box-shadow: 0 20px 30px -20px rgba(0,0,0,.3); }
+  .mobile-panel.open { display: flex; }
+  .mobile-panel a { padding: 14px 4px; border-bottom: 1px solid var(--line); text-decoration: none; font-weight: 600; color: var(--ink); }
+  .mobile-panel a:last-child { border-bottom: 0; }
+  @media (max-width: 780px) { .nav-links, .nav-right .nav-cta { display: none; } .menu-toggle { display: block; } }
+
+  /* ---------- Hero ---------- */
+  .hero { padding: 60px 0 0; }
+  .hero .wrap { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 56px; align-items: center; padding-bottom: 56px; }
+  @media (max-width: 900px) { .hero .wrap { grid-template-columns: 1fr; } }
+  .hero-tag { display: inline-flex; align-items: center; gap: 9px; font-size: 0.92rem; color: var(--oliva-deep); font-weight: 600; margin: 0 0 24px; }
+  .hero-tag .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--oliva); flex-shrink: 0; }
+  .hero h1 { font-family: var(--font-display); font-weight: 400; font-size: clamp(2.6rem, 5.8vw, 4.3rem); line-height: 1.04; margin: 0 0 24px; letter-spacing: -0.005em; }
+  .hero h1 i { font-style: italic; color: var(--melograno); }
+  .hero p.lede { font-size: 1.15rem; color: var(--ink-soft); max-width: 46ch; margin: 0 0 34px; }
+  .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
+  .btn-primary { background: var(--melograno); color: #fff; padding: 16px 28px; border-radius: 3px; text-decoration: none; font-weight: 700; font-size: 1rem; display: inline-flex; align-items: center; gap: 10px; transition: background .2s ease; }
+  .btn-primary:hover { background: var(--melograno-deep); }
+  .btn-ghost { color: var(--ink); text-decoration: none; font-weight: 700; font-size: 0.98rem; padding: 16px 26px; border: 1.5px solid var(--line); border-radius: 3px; }
+  .btn-ghost:hover { border-color: var(--melograno); color: var(--melograno); }
+  .hero-proof { margin-top: 38px; display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+  .hero-proof .stars { color: var(--melograno); letter-spacing: 2px; }
+  .hero-proof-text { font-size: 0.92rem; color: var(--ink-soft); }
+  .hero-visual { position: relative; }
+  .hero-photo { aspect-ratio: 4/5; border-radius: 4px; clip-path: polygon(0 0, 100% 0, 100% 88%, 88% 100%, 0 100%); }
+  .hero-card { position: absolute; left: -20px; bottom: 30px; background: var(--paper); border-radius: 4px; padding: 20px 24px; box-shadow: 0 24px 44px -18px rgba(36,27,34,.35); max-width: 240px; border-left: 3px solid var(--melograno); z-index: 2; }
+  .hero-card .stars { color: var(--melograno); font-size: 0.9rem; letter-spacing: 2px; margin-bottom: 8px; }
+  .hero-card p { margin: 0; color: var(--ink); font-family: var(--font-display); font-style: italic; font-size: 1.15rem; line-height: 1.35; }
+  @media (max-width: 900px) { .hero-card { position: static; margin-top: 18px; max-width: none; } }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .hero-tag, .hero h1, .hero p.lede, .hero-ctas, .hero-proof { opacity: 0; animation: rise .7s ease forwards; }
+    .hero-tag { animation-delay: .05s; } .hero h1 { animation-delay: .15s; } .hero p.lede { animation-delay: .28s; }
+    .hero-ctas { animation-delay: .4s; } .hero-proof { animation-delay: .5s; }
+    .hero-visual { opacity: 0; animation: rise .9s ease forwards; animation-delay: .25s; }
+    @keyframes rise { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+  }
+
+  /* ---------- Trust strip ---------- */
+  .strip { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 22px 0; background: var(--paper); }
+  .strip .wrap { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+  .chip { border: 1px solid var(--line); border-radius: 100px; padding: 8px 18px; font-size: 0.88rem; color: var(--ink-soft); font-weight: 500; }
+
+  /* ---------- Section shell ---------- */
+  section { padding: 96px 0; }
+  @media (max-width: 640px) { section { padding: 60px 0; } }
+  .section-head { display: grid; grid-template-columns: 1fr auto; gap: 40px; align-items: end; margin-bottom: 50px; }
+  @media (max-width: 640px) { .section-head { grid-template-columns: 1fr; } }
+  .section-head h2 { font-family: var(--font-display); font-weight: 400; font-size: clamp(1.9rem, 3.4vw, 2.7rem); margin: 0 0 12px; line-height: 1.12; }
+  .section-head p { color: var(--ink-soft); max-width: 48ch; margin: 0; font-size: 1.02rem; }
+  .section-tag { font-size: 0.9rem; color: var(--melograno-deep); font-weight: 700; margin: 0 0 10px; }
+
+  /* ---------- Chi siamo ---------- */
+  .about { background: var(--paper); }
+  .about .wrap { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 60px; align-items: center; }
+  @media (max-width: 860px) { .about .wrap { grid-template-columns: 1fr; } }
+  .about-photo { aspect-ratio: 3/4; border-radius: 4px; clip-path: polygon(12% 0, 100% 0, 100% 100%, 0 100%, 0 14%); }
+  .about-photo .badge { position: absolute; right: -14px; bottom: 26px; background: var(--paper); border-radius: 4px; padding: 16px 20px; box-shadow: 0 18px 36px -16px rgba(36,27,34,.32); border-left: 3px solid var(--oliva); z-index: 2; }
+  .about-photo .badge .num { font-family: var(--font-display); font-size: 1.8rem; color: var(--melograno); font-weight: 400; }
+  .about-photo .badge .lbl { font-size: 0.78rem; color: var(--ink-soft); }
+  .about h2 { font-family: var(--font-display); font-weight: 400; font-size: clamp(1.9rem, 3.2vw, 2.6rem); line-height: 1.16; margin: 0 0 22px; }
+  .about p { color: var(--ink-soft); margin: 0 0 18px; font-size: 1.04rem; max-width: 58ch; }
+  .about-signoff { font-family: var(--font-display); font-style: italic; font-size: 1.25rem; color: var(--melograno-deep); margin-top: 22px; }
+
+  /* ---------- Featured treatment ---------- */
+  .featured { background: var(--notte); color: #F3E9DD; border-radius: 4px; margin: 0 32px; padding: 64px; position: relative; overflow: hidden; }
+  @media (max-width: 640px) { .featured { margin: 0 16px; padding: 40px 24px; } }
+  .featured-inner { position: relative; z-index: 1; display: grid; grid-template-columns: 1fr 0.9fr; gap: 56px; align-items: center; }
+  @media (max-width: 900px) { .featured-inner { grid-template-columns: 1fr; } }
+  .featured-tag { display: inline-block; font-size: 0.85rem; font-weight: 700; color: var(--oro); margin-bottom: 18px; }
+  .featured h2 { font-family: var(--font-display); font-weight: 400; font-style: italic; font-size: clamp(1.9rem, 3.6vw, 2.8rem); line-height: 1.16; margin: 0 0 22px; color: #fff; }
+  .featured p.desc { color: #D9C4B4; font-size: 1.08rem; margin: 0 0 30px; max-width: 48ch; }
+  .featured .meta { display: flex; gap: 28px; margin-bottom: 30px; flex-wrap: wrap; }
+  .featured .meta div { font-size: 0.85rem; color: #C7AC98; }
+  .featured .meta strong { display: block; color: #fff; font-family: var(--font-display); font-size: 1.2rem; font-weight: 400; }
+  .featured-visual { aspect-ratio: 1/1; border-radius: 4px; }
+
+  /* ---------- Servizi: menu ---------- */
+  .menu-list { display: flex; flex-direction: column; border-top: 1px solid var(--line); }
+  .menu-row { display: grid; grid-template-columns: 84px 1fr auto; gap: 22px; padding: 26px 0; border-bottom: 1px solid var(--line); align-items: center; }
+  @media (max-width: 620px) { .menu-row { grid-template-columns: 64px 1fr; } .menu-row .menu-cta { grid-column: 1 / -1; margin-top: 4px; } }
+  .menu-thumb { width: 84px; height: 84px; border-radius: 10px; flex-shrink: 0; }
+  @media (max-width: 620px) { .menu-thumb { width: 64px; height: 64px; } }
+  .menu-body h3 { font-family: var(--font-display); font-weight: 400; font-size: 1.5rem; margin: 0 0 6px; }
+  .menu-body p { color: var(--ink-soft); font-size: 0.96rem; margin: 0; max-width: 52ch; }
+  .menu-cta { text-align: right; display: flex; flex-direction: column; align-items: flex-end; gap: 8px; }
+  .menu-price { font-weight: 700; color: var(--melograno-deep); font-size: 1rem; white-space: nowrap; }
+  .menu-link { font-size: 0.88rem; font-weight: 700; color: var(--ink); text-decoration: none; border-bottom: 1.5px solid var(--melograno); white-space: nowrap; }
+  .menu-link:hover { color: var(--melograno); }
+  .services-note { margin-top: 26px; font-size: 0.92rem; color: var(--ink-soft); }
+
+  /* ---------- Perché noi ---------- */
+  .why { background: var(--cream); }
+  .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 44px; }
+  @media (max-width: 780px) { .why-grid { grid-template-columns: 1fr; gap: 36px; } }
+  .why-item { border-top: 2px solid var(--oliva); padding-top: 20px; }
+  .why-item h3 { font-family: var(--font-display); font-weight: 400; font-size: 1.4rem; margin: 0 0 10px; }
+  .why-item p { color: var(--ink-soft); margin: 0; font-size: 0.98rem; }
+
+  /* ---------- FAQ ---------- */
+  .faq { background: var(--paper); }
+  .faq-list { max-width: 760px; }
+  .faq-item { border-bottom: 1px solid var(--line); }
+  .faq-item summary { cursor: pointer; padding: 22px 0; font-weight: 700; font-size: 1.05rem; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary::after { content: "+"; font-family: var(--font-display); font-size: 1.6rem; color: var(--melograno); flex-shrink: 0; transition: transform .2s; }
+  .faq-item[open] summary::after { transform: rotate(45deg); }
+  .faq-item p { color: var(--ink-soft); margin: 0 0 24px; max-width: 60ch; font-size: 0.98rem; }
+
+  /* ---------- Recensioni ---------- */
+  .reviews { background: var(--notte); color: #F3E9DD; }
+  .reviews .section-tag { color: var(--oro); }
+  .reviews .section-head p { color: #C7AC98; }
+  .rating-summary { display: flex; align-items: center; gap: 18px; margin-bottom: 40px; }
+  .rating-summary .num { font-family: var(--font-display); font-size: 3.2rem; font-weight: 400; color: #fff; }
+  .rating-summary .meta { color: #C7AC98; font-size: 0.95rem; }
+  .rating-summary .stars { color: var(--oro); font-size: 1.1rem; letter-spacing: 2px; margin-bottom: 4px; }
+  .reviews-track { display: flex; gap: 24px; overflow-x: auto; padding-bottom: 12px; scroll-snap-type: x proximity; margin: 0 -32px; padding-left: 32px; padding-right: 32px; }
+  @media (max-width: 640px) { .reviews-track { margin: 0 -20px; padding-left: 20px; padding-right: 20px; } }
+  .reviews-track::-webkit-scrollbar { height: 6px; }
+  .reviews-track::-webkit-scrollbar-thumb { background: var(--line-on-dark); border-radius: 6px; }
+  .review-card { scroll-snap-align: start; flex: 0 0 320px; border: 1px solid var(--line-on-dark); border-radius: 4px; padding: 28px; background: var(--notte-soft); }
+  .review-card .stars { color: var(--oro); letter-spacing: 2px; font-size: 0.95rem; margin-bottom: 16px; }
+  .review-card p { margin: 0 0 22px; font-size: 1.05rem; font-family: var(--font-display); font-style: italic; line-height: 1.4; color: #F3E9DD; }
+  .review-who { font-size: 0.85rem; color: #C7AC98; font-weight: 600; }
+
+  /* ---------- Contatti ---------- */
+  .contact .wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; }
+  @media (max-width: 860px) { .contact .wrap { grid-template-columns: 1fr; } }
+  .contact-card { background: var(--paper); border-radius: 4px; padding: 44px; border: 1px solid var(--line); }
+  .contact-card h2 { font-family: var(--font-display); font-weight: 400; font-size: 2.1rem; margin: 0 0 24px; }
+  .info-line { display: flex; gap: 16px; padding: 16px 0; border-top: 1px solid var(--line); font-size: 0.98rem; }
+  .info-line .label { color: var(--melograno-deep); font-weight: 700; min-width: 96px; flex-shrink: 0; }
+  .contact-actions { display: flex; gap: 12px; margin-top: 24px; flex-wrap: wrap; }
+  .btn-whatsapp { background: var(--oliva); color: #fff; padding: 13px 22px; border-radius: 3px; text-decoration: none; font-weight: 700; font-size: 0.92rem; display: inline-flex; align-items: center; gap: 8px; }
+  .btn-whatsapp:hover { background: var(--oliva-deep); }
+  .map-embed { margin-top: 24px; border-radius: 4px; overflow: hidden; border: 1px solid var(--line); }
+  .map-embed iframe { width: 100%; height: 220px; display: block; border: 0; }
+
+  .contact-form { display: flex; flex-direction: column; gap: 16px; }
+  .contact-form label { font-size: 0.9rem; font-weight: 700; color: var(--ink-soft); margin-bottom: 6px; display: block; }
+  .contact-form input, .contact-form select, .contact-form textarea { width: 100%; padding: 13px 14px; border: 1.5px solid var(--line); border-radius: 3px; background: var(--paper); color: var(--ink); font-family: var(--font-body); font-size: 0.98rem; }
+  .contact-form textarea { min-height: 100px; resize: vertical; }
+  .contact-form .field { display: flex; flex-direction: column; }
+  .form-note { font-size: 0.85rem; color: var(--ink-soft); margin-top: 4px; }
+  .contact-form button { border: none; cursor: pointer; }
+
+  /* ---------- Sticky CTA ---------- */
+  .sticky-cta { position: fixed; right: 20px; bottom: 20px; z-index: 60; display: flex; gap: 10px; align-items: center; }
+  .sticky-cta a { text-decoration: none; font-weight: 700; font-size: 0.92rem; display: inline-flex; align-items: center; justify-content: center; }
+  .sticky-cta a.call { background: var(--paper); color: var(--melograno-deep); width: 50px; height: 50px; border-radius: 50%; border: 1.5px solid var(--line); box-shadow: 0 12px 26px -12px rgba(36,27,34,.35); font-size: 1.2rem; }
+  .sticky-cta a.book { background: var(--melograno); color: #fff; padding: 15px 24px; border-radius: 3px; }
+  @media (max-width: 640px) { .sticky-cta { right: 14px; bottom: 14px; } .sticky-cta a.book { padding: 13px 18px; font-size: 0.86rem; } }
+
+  /* ---------- Footer ---------- */
+  footer { border-top: 1px solid var(--line); padding: 40px 0 110px; }
+  footer .wrap { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+  footer .fine { font-size: 0.85rem; color: var(--ink-soft); }
+  footer .fb-link { font-size: 0.85rem; font-weight: 700; color: var(--melograno-deep); text-decoration: none; }
+</style>
+</head>
+<body>
+
+<!--
+  NOTE PER CHI PUBBLICA IL SITO (rimuovi questo commento prima della messa online):
+  - Foto: quelle attuali sono foto stock libere da Pexels (uso commerciale gratuito), scelte solo per mostrare come apparirà il sito. Vanno sostituite con foto reali del salone, dei trattamenti e dello staff appena disponibili.
+  - Prezzi dei trattamenti: indicativi, da sostituire con il listino reale del salone.
+  - Orari: da confermare e inserire per ogni giorno della settimana.
+  - Recensioni: quelle qui presenti sono le recensioni reali fornite dal cliente; aggiornarle se ne arrivano di nuove.
+-->
+
+<a href="#main" class="skip-link">Vai al contenuto</a>
+
+<header>
+  <nav class="wrap">
+    <a href="#" class="brand">La Bellezza<b>CAGGIANO</b></a>
+    <ul class="nav-links">
+      <li><a href="#chi-siamo">Chi siamo</a></li>
+      <li><a href="#servizi">Trattamenti</a></li>
+      <li><a href="#recensioni">Recensioni</a></li>
+      <li><a href="#contatti">Dove siamo</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="#contatti" class="nav-cta">Prenota ora</a>
+      <button class="menu-toggle" aria-label="Apri il menu" aria-expanded="false" aria-controls="mobile-panel" id="menu-btn">
+        <svg fill="none" viewBox="0 0 24 24" stroke-width="1.8" id="menu-icon"><path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+    <div class="mobile-panel" id="mobile-panel">
+      <a href="#chi-siamo">Chi siamo</a>
+      <a href="#servizi">Trattamenti</a>
+      <a href="#recensioni">Recensioni</a>
+      <a href="#contatti">Dove siamo</a>
+      <a href="#contatti" class="nav-cta" style="text-align:center; margin-top:10px;">Prenota ora</a>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-copy">
+      <span class="hero-tag"><span class="dot"></span>Forloso, Caggiano (SA)</span>
+      <h1>Un'ora tutta <i>per te</i>, a due passi da casa.</h1>
+      <p class="lede">Entri stanca dalla giornata, esci con la pelle che respira e la testa leggera. Da anni le donne di Caggiano vengono da Rosa per questo: non solo un trattamento, ma un'ora in cui nessuno chiede niente, tranne come stai.</p>
+      <div class="hero-ctas">
+        <a href="#contatti" class="btn-primary">Prenota il tuo trattamento</a>
+        <a href="tel:+393284903931" class="btn-ghost">Chiama: 328 490 3931</a>
+      </div>
+      <div class="hero-proof">
+        <span class="stars">★★★★★</span>
+        <span class="hero-proof-text">5,0 su Google — "la migliore, gentilissima"</span>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-photo photo-frame">
+        <img src="https://images.pexels.com/photos/3738349/pexels-photo-3738349.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Trattamento viso rilassante in un centro estetico" loading="eager">
+        <svg class="grain" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+          <filter id="n1"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/></filter>
+          <rect width="100%" height="100%" filter="url(#n1)" opacity="0.25"/>
+        </svg>
+      </div>
+      <div class="hero-card">
+        <div class="stars">★★★★★</div>
+        <p>"Ambiente profumato, pulito e sistemato. Rosa, la migliore."</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="strip">
+  <div class="wrap">
+    <span class="chip">Trattamenti viso</span>
+    <span class="chip">Rituali corpo</span>
+    <span class="chip">Manicure &amp; pedicure</span>
+    <span class="chip">Epilazione</span>
+    <span class="chip">Trucco sposa</span>
+    <span class="chip">Massaggi rilassanti</span>
+  </div>
+</div>
+
+<section id="chi-siamo" class="about">
+  <div class="wrap">
+    <div class="about-photo photo-frame">
+      <img src="https://images.pexels.com/photos/7750099/pexels-photo-7750099.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Interno curato del centro estetico" loading="lazy">
+      <svg class="grain" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <filter id="n2"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/></filter>
+        <rect width="100%" height="100%" filter="url(#n2)" opacity="0.2"/>
+      </svg>
+      <div class="badge"><div class="num">5,0★</div><div class="lbl">oltre 10 recensioni</div></div>
+    </div>
+    <div class="about-text">
+      <p class="section-tag">La nostra storia</p>
+      <h2>Un salone che conosce le persone che accoglie, non solo la loro pelle.</h2>
+      <p>La Bellezza è nata a Caggiano come un piccolo centro di quartiere, e lo è rimasta. Ogni trattamento comincia con una chiacchierata vera: cosa ti serve oggi, non cosa vogliamo venderti.</p>
+      <p>L'ambiente è pulito, profumato, curato in ogni dettaglio — è la prima cosa che le persone notano, ed è quello che ci scrivono più spesso nelle recensioni.</p>
+      <p class="about-signoff">— Rosa e lo staff de La Bellezza</p>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="featured">
+    <div class="featured-inner">
+      <div>
+        <span class="featured-tag">Il trattamento del momento</span>
+        <h2>Il rituale viso al miele di castagno</h2>
+        <p class="desc">Le mani iniziano dal décolleté e risalgono lente fino alle tempie. Un olio caldo, gli stessi profumi delle colline intorno a Caggiano. Dopo quarantacinque minuti la pelle si distende, e con lei anche tu.</p>
+        <div class="meta">
+          <div><strong>45 min</strong>durata</div>
+          <div><strong>Viso e décolleté</strong>zona trattata</div>
+          <div><strong>Tutte le pelli</strong>indicato per</div>
+        </div>
+        <a href="#contatti" class="btn-primary">Voglio provarlo</a>
+      </div>
+      <div class="featured-visual photo-frame">
+        <img src="https://images.pexels.com/photos/5069612/pexels-photo-5069612.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Rituale viso con trattamento caldo" loading="lazy">
+        <svg class="grain" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+          <filter id="n3"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/></filter>
+          <rect width="100%" height="100%" filter="url(#n3)" opacity="0.3"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="servizi">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <p class="section-tag">Trattamenti</p>
+        <h2>Scegli il tuo momento</h2>
+      </div>
+      <p>Prezzi indicativi, da confermare in salone: scrivici e ti prepariamo un preventivo su misura entro la giornata.</p>
+    </div>
+
+    <div class="menu-list">
+      <div class="menu-row">
+        <div class="menu-thumb photo-frame"><img src="https://images.pexels.com/photos/6663368/pexels-photo-6663368.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Pulizia viso profonda" loading="lazy"></div>
+        <div class="menu-body"><h3>Pulizia viso profonda</h3><p>Detersione, esfoliazione ed estrazione, seguite da una maschera lenitiva. La pelle torna a respirare in una seduta.</p></div>
+        <div class="menu-cta"><span class="menu-price">da 35 €*</span><a href="#contatti" class="menu-link">Prenota</a></div>
+      </div>
+      <div class="menu-row">
+        <div class="menu-thumb photo-frame"><img src="https://images.pexels.com/photos/9146364/pexels-photo-9146364.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Massaggio corpo rilassante" loading="lazy"></div>
+        <div class="menu-body"><h3>Massaggio corpo rilassante</h3><p>Olio tiepido, luce bassa, musica quasi spenta. Ti dimentichi in fretta del motivo per cui sei venuta, e resti solo per respirare.</p></div>
+        <div class="menu-cta"><span class="menu-price">da 45 €*</span><a href="#contatti" class="menu-link">Prenota</a></div>
+      </div>
+      <div class="menu-row">
+        <div class="menu-thumb photo-frame"><img src="https://images.pexels.com/photos/5237959/pexels-photo-5237959.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Manicure e pedicure" loading="lazy"></div>
+        <div class="menu-body"><h3>Manicure &amp; pedicure</h3><p>Le mani che ogni giorno fanno tutto, per un'ora si lasciano fare. Forma, cuticole, smalto: un dettaglio che si vede da subito.</p></div>
+        <div class="menu-cta"><span class="menu-price">da 20 €*</span><a href="#contatti" class="menu-link">Prenota</a></div>
+      </div>
+      <div class="menu-row">
+        <div class="menu-thumb photo-frame"><img src="https://images.pexels.com/photos/35103884/pexels-photo-35103884.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Epilazione a cera calda" loading="lazy"></div>
+        <div class="menu-body"><h3>Epilazione a cera calda</h3><p>Gesti rapidi, precisi, pensati per dare fastidio il meno possibile. Pelle liscia che dura settimane, zero ansia.</p></div>
+        <div class="menu-cta"><span class="menu-price">da 12 €*</span><a href="#contatti" class="menu-link">Prenota</a></div>
+      </div>
+      <div class="menu-row">
+        <div class="menu-thumb photo-frame"><img src="https://images.pexels.com/photos/7290085/pexels-photo-7290085.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Trucco sposa e cerimonia" loading="lazy"></div>
+        <div class="menu-body"><h3>Trucco sposa &amp; cerimonia</h3><p>La prova trucco è un piccolo rito: ci si guarda, si cambia, si guarda ancora, finché non sei proprio tu, solo più luminosa.</p></div>
+        <div class="menu-cta"><span class="menu-price">su preventivo</span><a href="#contatti" class="menu-link">Prenota</a></div>
+      </div>
+      <div class="menu-row">
+        <div class="menu-thumb photo-frame"><img src="https://images.pexels.com/photos/18127465/pexels-photo-18127465.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Trattamento drenante gambe" loading="lazy"></div>
+        <div class="menu-body"><h3>Trattamento drenante</h3><p>Manualità mirate per gambe e corpo che chiedono leggerezza dopo una giornata in piedi. Da ripetere in un piccolo percorso.</p></div>
+        <div class="menu-cta"><span class="menu-price">da 40 €*</span><a href="#contatti" class="menu-link">Prenota</a></div>
+      </div>
+    </div>
+    <p class="services-note">*Prezzi indicativi in attesa del listino definitivo del salone: sostituiscili con quelli reali non appena li invii.</p>
+  </div>
+</section>
+
+<section class="why">
+  <div class="wrap">
+    <div class="why-grid">
+      <div class="why-item">
+        <h3>Ti conosciamo per nome</h3>
+        <p>Non sei un numero in agenda: ricordiamo cosa hai provato l'ultima volta e cosa ti è piaciuto di più.</p>
+      </div>
+      <div class="why-item">
+        <h3>Un ambiente che si vede</h3>
+        <p>Pulito, luminoso, curato in ogni angolo — è la cosa che le persone di Caggiano ci scrivono più spesso.</p>
+      </div>
+      <div class="why-item">
+        <h3>Nessuna fretta</h3>
+        <p>Ogni trattamento ha il suo tempo giusto. Non tagliamo un minuto per far entrare l'appuntamento dopo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <p class="section-tag">Domande frequenti</p>
+        <h2>Prima di venire da noi</h2>
+      </div>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Devo prenotare in anticipo?</summary>
+        <p>È consigliato, soprattutto nel weekend, ma scrivici pure per un appuntamento last minute: se abbiamo un buco in agenda, ti troviamo un posto.</p>
+      </details>
+      <details class="faq-item">
+        <summary>È la mia prima volta qui, cosa devo aspettarmi?</summary>
+        <p>Prima di ogni trattamento facciamo due chiacchiere per capire cosa ti serve davvero e se hai pelle sensibile o allergie da segnalarci.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Fate anche il trucco per matrimoni ed eventi?</summary>
+        <p>Sì: partiamo sempre da una prova trucco, per arrivare al giorno dell'evento senza sorprese. Scrivici la data e ti prepariamo un preventivo.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Quanto dura in media un trattamento?</summary>
+        <p>Dipende dal trattamento: dai 20-30 minuti di una manicure alle 45-60 pensate per un rituale viso o un massaggio corpo completo.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="recensioni">
+  <div class="wrap">
+    <p class="section-tag">Cosa dicono di noi</p>
+    <div class="rating-summary">
+      <div class="num">5,0</div>
+      <div class="meta"><div class="stars">★★★★★</div><div>basato sulle recensioni Google del salone</div></div>
+    </div>
+    <div class="reviews-track">
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>"Ambiente profumato, pulito e sistemato. Rosa è una persona bravissima e gentilissima: la migliore."</p>
+        <div class="review-who">Giulia De Marinis</div>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>"Molto professionali, un bellissimo lavoro sulle unghie."</p>
+        <div class="review-who">Giuseppina Adesso</div>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>"Posto pulito e ben organizzato."</p>
+        <div class="review-who">Baldo Attanasio</div>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>"Salone bellissimo e moderno, molto professionale, luminoso e pulito. Prodotti ottimi e lavoro molto preciso: sono entusiasta."</p>
+        <div class="review-who">C. Carucci</div>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>"Un salone accogliente, lo consiglio a tutte le persone di Caggiano e dintorni."</p>
+        <div class="review-who">Nunzia Morrone</div>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>"Sempre gentili e attente: un'esperienza piacevole ogni volta."</p>
+        <div class="review-who">Francesca Gorga</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contatti">
+  <div class="wrap">
+    <div class="contact-card">
+      <p class="section-tag">Vieni a trovarci</p>
+      <h2>Ti aspettiamo a Caggiano</h2>
+      <div class="info-line"><span class="label">Indirizzo</span><span>Forloso, 84030 Caggiano (SA)</span></div>
+      <div class="info-line"><span class="label">Orari</span><span>Aperto oggi<br><span style="opacity:.75; font-size:.85rem;">orario completo da confermare</span></span></div>
+      <div class="info-line"><span class="label">Telefono</span><span><a href="tel:+393284903931" style="color:inherit; text-decoration:none; border-bottom:1px solid var(--line);">328 490 3931</a></span></div>
+      <div class="info-line"><span class="label">Valutazione</span><span>★★★★★ 5,0 su Google, oltre 10 recensioni</span></div>
+      <div class="contact-actions">
+        <a href="https://wa.me/393284903931?text=Ciao%2C%20vorrei%20prenotare%20un%20trattamento%20da%20La%20Bellezza" class="btn-whatsapp">Scrivici su WhatsApp</a>
+        <a href="https://www.facebook.com/labellezzacentroestetico/" class="btn-ghost" style="padding:13px 22px;">Pagina Facebook</a>
+      </div>
+      <div class="map-embed">
+        <iframe src="https://www.google.com/maps?q=Forloso,+84030+Caggiano+SA&output=embed" loading="lazy" title="Mappa: La Bellezza, Forloso, Caggiano (SA)" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+    <div>
+      <p class="section-tag">Prenota</p>
+      <h2 style="font-family: var(--font-display); font-weight: 400; font-size: 2.1rem; margin: 0 0 24px;">Scrivici, ti richiamiamo noi</h2>
+      <form class="contact-form" onsubmit="event.preventDefault(); document.getElementById('form-ok').style.display='block'; this.reset();">
+        <div class="field"><label for="nome">Nome</label><input id="nome" type="text" placeholder="Il tuo nome" required></div>
+        <div class="field"><label for="tel">Telefono o email</label><input id="tel" type="text" placeholder="Come possiamo ricontattarti" required></div>
+        <div class="field">
+          <label for="trattamento">Trattamento desiderato</label>
+          <select id="trattamento">
+            <option>Pulizia viso profonda</option>
+            <option>Massaggio corpo rilassante</option>
+            <option>Manicure &amp; pedicure</option>
+            <option>Epilazione</option>
+            <option>Trucco sposa e cerimonia</option>
+            <option>Non so ancora, vorrei un consiglio</option>
+          </select>
+        </div>
+        <div class="field"><label for="msg">Messaggio (facoltativo)</label><textarea id="msg" placeholder="Giorni o orari preferiti, richieste particolari..."></textarea></div>
+        <button type="submit" class="btn-primary">Invia richiesta</button>
+        <p class="form-note" id="form-ok" style="display:none; color: var(--melograno-deep); font-weight:700;">Richiesta inviata: ti ricontattiamo al più presto.</p>
+        <p class="form-note">Modulo dimostrativo: per attivarlo davvero collegalo a un numero WhatsApp, un'email o un gestionale di prenotazione.</p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<div class="sticky-cta">
+  <a href="tel:+393284903931" class="call" aria-label="Chiama il salone">📞</a>
+  <a href="#contatti" class="book">Prenota ora</a>
+</div>
+
+<footer>
+  <div class="wrap">
+    <a href="#" class="brand">La Bellezza <i style="font-style:italic; color:var(--melograno);">Caggiano</i></a>
+    <p class="fine">Forloso, 84030 Caggiano (SA) · 328 490 3931 · Sito dimostrativo</p>
+    <a href="https://www.facebook.com/labellezzacentroestetico/" class="fb-link">Seguici su Facebook →</a>
+  </div>
+</footer>
+
+<script>
+  var btn = document.getElementById('menu-btn');
+  var panel = document.getElementById('mobile-panel');
+  function closePanel() { panel.classList.remove('open'); btn.setAttribute('aria-expanded', 'false'); }
+  btn.addEventListener('click', function () {
+    var open = panel.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  panel.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', closePanel); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closePanel(); });
+</script>
+
+</body>
+</html>
